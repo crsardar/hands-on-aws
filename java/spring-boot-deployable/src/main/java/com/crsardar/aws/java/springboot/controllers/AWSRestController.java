@@ -13,7 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class AWSRestController {
 
-    @GetMapping("/")
+    @GetMapping
+    public String hiChitta()
+    {
+        return "\nSpider lives in Web, I live at Home!\nPlease wait for me!\n\n - Chittaranjan Sardar";
+    }
+
+    @GetMapping("/aws-spring-boot")
     public HelloAWS helloAwsSpring()
     {
         return new HelloAWS("Hello AWS! I am SpringBoot!");

@@ -14,6 +14,8 @@ public class HelloAWS {
 
     private Date date;
 
+    private final String developer = "Mr. Chittaranjan Sardar";
+
     public HelloAWS() {
     }
 
@@ -36,5 +38,9 @@ public class HelloAWS {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getDeveloper() {
+        return developer;
     }
 }
